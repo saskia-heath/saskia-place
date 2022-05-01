@@ -4,8 +4,7 @@
 }
 
 body {
-  float: left;
-  padding: 50px;
+  padding-left: 50px;
 }
 
 title {
@@ -17,9 +16,8 @@ h1 {
 }
 
 #horizontalnavigation {
-  background: black;
+  background-color: black;
   display: block;
-  padding: 50px 0px 50px 0px;
 }
 
 nav > a {
