@@ -24,6 +24,7 @@ header {
 }
 
 aside {
+  margin: 0px;
   background: orange;
   grid-area: sdbr;
 }
