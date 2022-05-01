@@ -5,6 +5,7 @@
 
 nav {
   background-color: black;
+  display: block;
   padding: 10px;
 }
 
