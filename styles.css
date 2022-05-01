@@ -1,21 +1,42 @@
 * {
-  font-family: "Arial Black";
+  font-family: sans-serif;
   text-align: center;
   color: white;
 }
 
-nav {
-  background: black;
-  display: block;
-  padding: 10px;
+title {
+  display: none;
 }
 
 body {
-  padding-left: 50px;
+  background: black;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas: "hdr hdr";
+                       "sdbr mn";
+                       "ftr ftr";
 }
 
-title {
-  display: none;
+header {
+  background: yellow;
+  grid-area: hdr;
+}
+
+aside {
+  background: orange;
+  grid-area: sdbr;
+}
+
+main {
+  background: red;
+  grid-area: mn;
+}
+
+footer {
+  background: purple;
+  grid-area: ftr;
 }
 
 h1 {
