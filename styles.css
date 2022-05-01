@@ -22,6 +22,16 @@ header {
   grid-area: hdr;
 }
 
+#ytbtn {
+    display: block;
+    font-size: 32px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    margin: 30px;
+}
+
 aside {
   margin: 0px;
   background: black;
