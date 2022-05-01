@@ -13,8 +13,8 @@ body {
   display: grid;
   grid-template-columns: 25% auto;
   grid-template-rows: 100px auto 100px;
-  grid-template-areas: "hdr hdr";
-                       "sdbr mn";
+  grid-template-areas: "hdr hdr"
+                       "sdbr mn"
                        "ftr ftr";
 }
 
