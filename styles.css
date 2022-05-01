@@ -3,6 +3,12 @@
   color: white;
 }
 
+nav {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
 body {
   padding-left: 50px;
 }
@@ -13,9 +19,4 @@ title {
 
 h1 {
   color: red;
-}
-
-#horizontalnavigation {
-  background-color: black;
-  display: block;
 }
