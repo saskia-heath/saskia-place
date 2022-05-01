@@ -11,21 +11,20 @@ body {
   background: black;
   margin: 0px;
   display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-rows: 100px 600px 100px;
-  grid-template-areas: "hdr hdr"
-                       "sdbr mn"
-                       "ftr ftr";
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto 600px;
+  grid-template-areas: "sdbr hdr"
+                       "ftr mn";
 }
 
 header {
-  background: yellow;
+  background: whitesmoke;
   grid-area: hdr;
 }
 
 aside {
   margin: 0px;
-  background: orange;
+  background: black;
   grid-area: sdbr;
 }
 
@@ -40,5 +39,9 @@ footer {
 }
 
 h1 {
-  color: red;
-}
+  color: black;
+  text-align: left;
+  margin: 30px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;}
