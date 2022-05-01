@@ -11,47 +11,65 @@ body {
   background: black;
   margin: 0px;
   display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: auto 600px;
-  grid-template-areas: "sdbr hdr"
-                       "ftr mn";
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px 400px 400px 400px 400px;
+  grid-template-areas: "hdr lnks"
+                       "ytlnk ptrnlnk"
+                       "ttlnk twtrlnk" 
+                       "mn mn"
+                       "ftr ftr";
 }
 
-header {
-  background: whitesmoke;
-  grid-area: hdr;
-}
-
-#ytbtn {
-    display: block;
-    font-size: 32px;
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    margin: 30px;
-}
-
-aside {
-  margin: 0px;
-  background: black;
-  grid-area: sdbr;
-}
-
-main {
-  background: red;
-  grid-area: mn;
-}
-
-footer {
-  background: purple;
-  grid-area: ftr;
-}
-
-h1 {
-  color: black;
-  text-align: left;
-  margin: 30px;
+div {
+  display: block;
+  padding: 10px;
   border-style: solid;
   border-width: 1px;
-  padding: 10px;}
+  border-color: white;
+  margin: 30px;
+}
+
+div > a, div > p {
+  font-size: 32px;
+  color: white;
+}
+
+div#header {
+  grid-area: hdr;
+  background: black;
+}
+
+div#links {
+  grid-area: lnks;
+  background: black;
+}
+
+div#youtubelink {
+  grid-area: ytlnk;
+  background: red;
+}
+
+div#patreonlink {
+  grid-area: ptrnlnk;
+  background: orange;
+}
+
+div#tiktoklink {
+  grid-area: ttlnk;
+  background: green;
+}
+
+div#twitterlink {
+  grid-area: twtrlnk;
+  background: blue;
+}
+
+div#main {
+  grid-area: mn;
+  background: black;
+}
+
+div#footer {
+  grid-area: ftr;
+  background: black;
+}
