@@ -8,6 +8,10 @@ body {
   padding: 50px;
 }
 
+title {
+  display: none;
+}
+
 h1 {
   color: red;
 }
