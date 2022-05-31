@@ -8,68 +8,41 @@ title {
 }
 
 body {
-  background: black;
-  margin: 0px;
-  display: grid;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 400px 400px 400px 400px 400px;
-  grid-template-areas: "hdr lnks"
-                       "ytlnk ptrnlnk"
-                       "ttlnk twtrlnk" 
-                       "mn mn"
-                       "ftr ftr";
+    background: black;
+    margin: 0px;
 }
 
-div {
-  display: block;
-  padding: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  margin: 30px;
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    background-color: white;
 }
 
-div > a, div > p {
-  font-size: 32px;
-  color: white;
+.main {
+    margin-left: 400px;
+    width: auto;
+    height: 1200px;
 }
 
-div#header {
-  grid-area: hdr;
-  background: black;
+.sidenav > a {
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    padding: 10px 0px 10px 10px;
+    margin: 0px;
 }
 
-div#links {
-  grid-area: lnks;
-  background: black;
+.sidenav > a#header {
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px;
 }
 
-div#youtubelink {
-  grid-area: ytlnk;
-  background: red;
-}
-
-div#patreonlink {
-  grid-area: ptrnlnk;
-  background: orange;
-}
-
-div#tiktoklink {
-  grid-area: ttlnk;
-  background: green;
-}
-
-div#twitterlink {
-  grid-area: twtrlnk;
-  background: blue;
-}
-
-div#main {
-  grid-area: mn;
-  background: black;
-}
-
-div#footer {
-  grid-area: ftr;
-  background: black;
+.main > p {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
